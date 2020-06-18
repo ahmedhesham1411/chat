@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:text="Create a new account"
+        android:textStyle="bold"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/username"
+        android:hint="Username"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:id="@+id/password"
+        android:hint="Password"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:text="register"
+        android:textStyle="bold"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/btn_register"/>
+
+</LinearLayout>
+
+</RelativeLayout>
